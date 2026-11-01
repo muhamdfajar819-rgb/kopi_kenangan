@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copy Kenangan — Kedai Kopi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="#" class="logo">Copy Kenangan</a>
+      <nav><a href="#menu">Menu</a><a href="#kontak">Kontak</a></nav>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Kedai Kopi</p>
+      <h1>Copy <span>Kenangan</span></h1>
+      <p class="slogan">
+        Lengkapi kenangan Anda dengan minum secangkir kopi kenangan ini.
+      </p>
+      <a href="#menu" class="btn">Lihat Menu</a>
+    </section>
+
+    <section id="menu" class="section">
+      <h2>Menu &amp; Harga</h2>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="menu-list"></div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h2>Kontak Kami untuk Memesan</h2>
+      <form id="order-form" class="form" novalidate>
+        <label
+          >Nama<input name="nama" required placeholder="Nama lengkap"
+        /></label>
+        <label
+          >No. WhatsApp<input
+            name="whatsapp"
+            type="tel"
+            required
+            placeholder="08xxxxxxxxxx"
+        /></label>
+        <label
+          >Email<input
+            name="email"
+            type="email"
+            required
+            placeholder="nama@email.com"
+        /></label>
+        <label
+          >Alamat<textarea
+            name="alamat"
+            rows="3"
+            required
+            placeholder="Alamat pengiriman"
+          ></textarea>
+        </label>
+        <button class="btn" type="submit">Kirim Pesanan</button>
+        <p id="form-msg" class="msg" role="status"></p>
+      </form>
+    </section>
+    <footer>
+      © <span id="year"></span> kopi Kenangan. Dibuat dengan secangkir kopi.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
